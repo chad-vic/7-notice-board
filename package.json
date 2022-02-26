@@ -1,0 +1,20 @@
+{
+  "name": "7-notice-board",
+  "version": "1.0.0",
+  "description": "This is an opensource project used to manage school notice-board.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chad-vic/7-notice-board.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chad-vic/7-notice-board/issues"
+  },
+  "homepage": "https://github.com/chad-vic/7-notice-board#readme"
+}
