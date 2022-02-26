@@ -16,5 +16,20 @@
   "bugs": {
     "url": "https://github.com/chad-vic/7-notice-board/issues"
   },
-  "homepage": "https://github.com/chad-vic/7-notice-board#readme"
+  "homepage": "https://github.com/chad-vic/7-notice-board#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-async-errors": "^3.1.1",
+    "http-status-codes": "^2.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.3",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.15"
+  }
 }
