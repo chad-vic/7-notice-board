@@ -1,19 +1,43 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
-import Home from '../views/Home.vue'
+import {
+  createRouter,
+  createWebHashHistory
+} from 'vue-router'
+import notifications from '../views/notifications.vue'
 
-const routes = [
-  {
+const routes = [{
     path: '/',
+    name: 'Notifications',
+    component: notifications
+  }, {
+    path: '/seven',
     name: 'Home',
-    component: Home
+    component: () => import('../components/home.vue')
+  }, {
+    path: '/settings',
+    name: 'Settings',
+    component: () => import('../views/settings.vue')
   },
   {
-    path: '/about',
-    name: 'About',
+    path: '/bookmarks',
+    name: 'bookmarks',
     // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
+    // this generates a separate chunk (bookmarks.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    component: () => import( /* webpackChunkName: "bookmarks" */ '../views/bookmarks.vue')
+  }, {
+    path: '/important',
+    name: 'important',
+    // route level code-splitting
+    // this generates a separate chunk (important.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import( /* webpackChunkName: "important" */ '../views/important.vue')
+  }, {
+    path: '/notifications',
+    name: 'notifications',
+    // route level code-splitting
+    // this generates a separate chunk (notifications.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import( /* webpackChunkName: "notifications" */ '../views/notifications.vue')
   }
 ]
 
